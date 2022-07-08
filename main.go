@@ -1,10 +1,9 @@
 package main
 
 import (
-	"./database"
-	"./routes"
 	"github.com/chris92vr/go-auth/database"
-	"github.com/gofiber/fiber/v2"
+	"github.com/chris92vr/go-auth/routes"
+	"github.com/gofiber/fiber"
 )
 
 func main() {
@@ -14,5 +13,5 @@ func main() {
 
 	routes.Setup(app)
 
-	app.Listen(":8000")
+	app.Listen("localhost:8080")
 }
